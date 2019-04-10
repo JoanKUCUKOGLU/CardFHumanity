@@ -7,8 +7,13 @@
     "postinstall": "npm run install:back && npm run install:front",
     "install:back": "cd back && npm install",
     "install:front": "cd front && npm install",
+    "serve:back": "cd back && npm run serve",
+    "serve:front": "cd front && npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
 }

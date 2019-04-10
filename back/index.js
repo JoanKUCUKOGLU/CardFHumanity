@@ -9,11 +9,11 @@ router
   .get('/', function * (next) {
     this.body = 'Welcome to Cards For Humanity!'
   })
-  .get('/:color/', async function * (next) {
+  .get('/:color/', async function (next) {
     var { color } = this.params
     this.body = await Cards.getAll(color)
   })
-  .get('/:color/:amount', async function * (next) {
+  .get('/:color/:amount', async function (next) {
     var { color, amount } = this.params
     this.body = await Cards.getAmount(color, amount)
   })

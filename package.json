@@ -1,0 +1,14 @@
+{
+  "name": "cfh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run install:back && npm run install:front",
+    "install:back": "cd back && npm install",
+    "install:front": "cd front && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

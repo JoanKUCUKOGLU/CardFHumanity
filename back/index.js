@@ -1,9 +1,12 @@
 'use strict'
 const app = require('koa')()
+const cors = require('koa-cors');
 const router = require('koa-router')()
 const Cards = require('./controllers/cards.js')
 
 const port = process.argv[2]
+
+app.use(cors());
 
 router
   .get('/', function * (next) {

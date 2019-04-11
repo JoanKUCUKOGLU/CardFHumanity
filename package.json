@@ -14,6 +14,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^4.1.0"
+    "concurrently": "^4.1.0",
+    "vue-material": "^1.0.0-beta-10.2"
+  },
+  "devDependencies": {
+    "vue-md-loader": "^1.1.0"
   }
 }
